@@ -1,0 +1,72 @@
+/* =========================================================
+   Login / Signup / Contact form styling
+   ========================================================= */
+
+.auth-wrap {
+  max-width: 460px; margin: 20px auto 70px; background: #fff;
+  border-radius: var(--radius); box-shadow: 0 4px 24px rgba(0,0,0,.06);
+  padding: 40px 36px;
+}
+.auth-wrap h1 { font-size: 24px; margin-bottom: 6px; text-align: center; }
+.auth-subtitle { text-align: center; color: var(--muted); font-size: 14px; margin-bottom: 28px; }
+
+.form-group { margin-bottom: 18px; }
+.form-group label { display: block; font-size: 13px; font-weight: 600; margin-bottom: 8px; }
+.form-group .required { color: var(--error); }
+
+.form-control {
+  width: 100%; padding: 12px 14px; border: 1px solid var(--border); border-radius: 8px;
+  font-size: 14px; font-family: Poppins, sans-serif; outline: none; transition: border-color .2s ease;
+  background: #fff;
+}
+.form-control:focus { border-color: var(--brand); }
+textarea.form-control { resize: vertical; min-height: 110px; }
+
+.password-field { position: relative; }
+.password-field .form-control { padding-right: 42px; }
+.js-toggle-password { position: absolute; right: 12px; top: 50%; transform: translateY(-50%); background: none; border: none; color: var(--muted); }
+
+.form-group.has-error .form-control { border-color: var(--error); }
+.field-error { display: block; font-size: 12px; color: var(--error); margin-top: 6px; min-height: 14px; }
+
+.password-strength { font-size: 12px; margin-top: 8px; font-weight: 600; }
+.strength-weak { color: var(--error); }
+.strength-good { color: #c98a12; }
+.strength-strong { color: var(--success); }
+
+.form-error-banner {
+  background: #fdecea; color: var(--error); border: 1px solid #f5c6cb;
+  padding: 12px 14px; border-radius: 8px; font-size: 13px; margin-bottom: 18px;
+}
+
+.form-checkbox { display: flex; align-items: flex-start; gap: 10px; font-size: 13px; margin-bottom: 22px; }
+.form-checkbox input { margin-top: 3px; }
+.form-checkbox a { color: var(--brand); font-weight: 600; }
+
+.auth-submit { width: 100%; padding: 13px; font-size: 14px; }
+
+.auth-switch { text-align: center; margin-top: 22px; font-size: 13px; color: var(--muted); }
+.auth-switch a { color: var(--brand); font-weight: 700; }
+
+.form-row-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+@media (max-width: 500px) { .form-row-2 { grid-template-columns: 1fr; } }
+
+/* ---------- Contact page ---------- */
+.contact-layout { display: grid; grid-template-columns: 1.3fr 1fr; gap: 50px; margin-bottom: 50px; }
+@media (max-width: 900px) { .contact-layout { grid-template-columns: 1fr; } }
+
+.contact-form-card { background: #fff; border-radius: var(--radius); box-shadow: 0 2px 10px rgba(0,0,0,.05); padding: 32px; }
+.contact-form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+@media (max-width: 560px) { .contact-form-row { grid-template-columns: 1fr; } }
+
+.contact-info-card {
+  background: var(--brand-light); border-radius: var(--radius); padding: 32px;
+  display: flex; flex-direction: column; gap: 26px; height: fit-content;
+}
+.contact-info-item { display: flex; gap: 16px; align-items: flex-start; }
+.contact-info-item i { font-size: 20px; color: var(--brand); width: 26px; }
+.contact-info-item h3 { font-size: 14px; text-transform: uppercase; margin-bottom: 4px; }
+.contact-info-item p, .contact-info-item a { font-size: 13px; color: var(--muted); }
+
+.contact-success { text-align: center; background: #fff; border-radius: var(--radius); padding: 50px 30px; box-shadow: 0 2px 10px rgba(0,0,0,.05); }
+.contact-success i { font-size: 50px; color: var(--success); margin-bottom: 16px; }

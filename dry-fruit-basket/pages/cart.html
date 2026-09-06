@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart | Dry Fruit Basket</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/grid.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="../assets/css/base.css">
+    <link rel="stylesheet" href="../assets/css/cart.css">
+    <link rel="icon" type="image/svg+xml" href="../assets/img/dry-fruits-logo.svg">
+</head>
+
+<body>
+    <script>window.ROOT = "../";</script>
+
+    <header id="site-header"></header>
+
+    <section class="breadcrumb-section">
+        <div class="container d-flex align-items-center justify-content-between flex-wrap">
+            <div class="breadcrumb-title"><h1>Your Cart</h1></div>
+            <ul class="breadcrumb">
+                <li><a href="../index.html">Home</a></li>
+                <li class="active">Cart</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="container">
+
+        <div class="cart-empty js-cart-empty">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <h2>Your cart is empty</h2>
+            <p>Looks like you haven't added anything to your cart yet.</p>
+            <a href="shop.html" class="theme-btn theme-btn-solid">Start Shopping</a>
+        </div>
+
+        <div class="cart-success js-cart-success" hidden>
+            <i class="fa-solid fa-circle-check"></i>
+            <h2>Order placed successfully!</h2>
+            <p>Order ID: <span class="order-id js-order-id"></span></p>
+            <p>Total paid: <strong class="js-order-total"></strong></p>
+            <p>A confirmation has been sent to <span class="js-order-email"></span>.</p>
+            <a href="shop.html" class="theme-btn theme-btn-solid">Continue Shopping</a>
+        </div>
+
+        <div class="cart-layout js-cart-content" hidden>
+            <div class="cart-panel">
+                <div class="cart-panel-head">
+                    <h2><span class="js-cart-item-count">0</span> item(s) in your cart</h2>
+                    <button type="button" class="js-clear-cart-btn">Clear Cart</button>
+                </div>
+                <div class="js-cart-lines"></div>
+            </div>
+
+            <div class="cart-summary">
+                <h2>Order Summary</h2>
+                <div class="cart-summary-row"><span>Subtotal</span><span class="js-cart-subtotal">₹0.00</span></div>
+                <div class="cart-summary-row"><span>Shipping</span><span class="js-cart-shipping">FREE</span></div>
+                <div class="cart-summary-row total"><span>Total</span><span class="js-cart-total">₹0.00</span></div>
+                <p class="shipping-note js-shipping-note"></p>
+                <button type="button" class="theme-btn theme-btn-solid js-checkout-btn">Proceed to Checkout</button>
+            </div>
+        </div>
+
+    </section>
+
+    <footer id="site-footer"></footer>
+
+    <script src="../assets/js/data/products.js"></script>
+    <script src="../assets/js/utils.js"></script>
+    <script src="../assets/js/cart.js"></script>
+    <script src="../assets/js/auth.js"></script>
+    <script src="../assets/js/search.js"></script>
+    <script src="../assets/js/carousel.js"></script>
+    <script src="../assets/js/product-card.js"></script>
+    <script src="../assets/js/components.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/pages/cart-page.js"></script>
+</body>
+
+</html>

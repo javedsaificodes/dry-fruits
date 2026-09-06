@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Dry Fruit Basket</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/grid.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="../assets/css/base.css">
+    <link rel="stylesheet" href="../assets/css/auth.css">
+    <link rel="icon" type="image/svg+xml" href="../assets/img/dry-fruits-logo.svg">
+</head>
+
+<body>
+    <script>window.ROOT = "../";</script>
+
+    <header id="site-header"></header>
+
+    <section class="breadcrumb-section">
+        <div class="container d-flex align-items-center justify-content-between flex-wrap">
+            <div class="breadcrumb-title"><h1>Login</h1></div>
+            <ul class="breadcrumb">
+                <li><a href="../index.html">Home</a></li>
+                <li class="active">Login</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="auth-wrap">
+            <h1>Welcome Back</h1>
+            <p class="auth-subtitle">Log in to view your cart and checkout faster.</p>
+
+            <div class="form-error-banner js-form-error" hidden></div>
+
+            <form id="login-form" novalidate>
+                <div class="form-group">
+                    <label for="login-email">Email Address <span class="required">*</span></label>
+                    <input type="email" id="login-email" class="form-control" placeholder="you@example.com" required autocomplete="email">
+                    <span class="field-error"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="login-password">Password <span class="required">*</span></label>
+                    <div class="password-field">
+                        <input type="password" id="login-password" class="form-control" placeholder="Enter your password" required autocomplete="current-password">
+                        <button type="button" class="js-toggle-password" tabindex="-1" aria-label="Show password"><i class="fa-solid fa-eye"></i></button>
+                    </div>
+                    <span class="field-error"></span>
+                </div>
+
+                <button type="submit" class="theme-btn theme-btn-solid auth-submit">Log In</button>
+            </form>
+
+            <p class="auth-switch">Don't have an account? <a href="signup.html">Create one now</a></p>
+        </div>
+    </section>
+
+    <footer id="site-footer"></footer>
+
+    <script src="../assets/js/data/products.js"></script>
+    <script src="../assets/js/utils.js"></script>
+    <script src="../assets/js/cart.js"></script>
+    <script src="../assets/js/auth.js"></script>
+    <script src="../assets/js/search.js"></script>
+    <script src="../assets/js/carousel.js"></script>
+    <script src="../assets/js/product-card.js"></script>
+    <script src="../assets/js/components.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/pages/login.js"></script>
+</body>
+
+</html>

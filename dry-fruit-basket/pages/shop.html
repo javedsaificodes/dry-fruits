@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop All Products | Dry Fruit Basket</title>
+    <meta name="description" content="Browse and search our full range of dry fruits, seeds, dates, nuts and berries.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/grid.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="../assets/css/base.css">
+    <link rel="stylesheet" href="../assets/css/shop.css">
+    <link rel="icon" type="image/svg+xml" href="../assets/img/dry-fruits-logo.svg">
+</head>
+
+<body>
+    <script>window.ROOT = "../";</script>
+
+    <header id="site-header"></header>
+
+    <section class="breadcrumb-section">
+        <div class="container d-flex align-items-center justify-content-between flex-wrap">
+            <div class="breadcrumb-title"><h1 class="js-shop-heading">Shop All Products</h1></div>
+            <ul class="breadcrumb">
+                <li><a href="../index.html">Home</a></li>
+                <li class="active">Shop</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="container mb-5">
+        <div class="active-search-banner js-active-search" hidden>
+            <span>Search results for "<strong class="js-active-search-term"></strong>"</span>
+            <button type="button" class="js-clear-search">Clear search</button>
+        </div>
+
+        <div class="shop-toolbar">
+            <div class="category-pills js-category-pills"></div>
+            <div class="shop-sort">
+                <span class="js-result-count"></span>
+                <label for="sort-select" class="sr-only">Sort by</label>
+                <select id="sort-select">
+                    <option value="relevance">Sort: Relevance</option>
+                    <option value="price-asc">Price: Low to High</option>
+                    <option value="price-desc">Price: High to Low</option>
+                    <option value="rating-desc">Top Rated</option>
+                    <option value="name-asc">Name: A-Z</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="product-grid js-product-grid"></div>
+    </section>
+
+    <footer id="site-footer"></footer>
+
+    <script src="../assets/js/data/products.js"></script>
+    <script src="../assets/js/utils.js"></script>
+    <script src="../assets/js/cart.js"></script>
+    <script src="../assets/js/auth.js"></script>
+    <script src="../assets/js/search.js"></script>
+    <script src="../assets/js/carousel.js"></script>
+    <script src="../assets/js/product-card.js"></script>
+    <script src="../assets/js/components.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/pages/shop.js"></script>
+</body>
+
+</html>

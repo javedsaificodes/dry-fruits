@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dry Fruit Basket | Premium Dry Fruits, Seeds, Dates &amp; Nuts Online</title>
+    <meta name="description" content="Shop premium quality cashews, almonds, walnuts, dates, seeds and nuts online. Handpicked, fresh and delivered to your doorstep.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/grid.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/shop.css">
+    <link rel="icon" type="image/svg+xml" href="assets/img/dry-fruits-logo.svg">
+</head>
+
+<body>
+    <script>window.ROOT = "";</script>
+
+    <header id="site-header"></header>
+
+    <!-- Hero Banner -->
+    <section>
+        <div class="hero-carousel carousel-shell" data-carousel data-autoplay="true" data-interval="6000">
+            <div class="carousel-slides">
+                <div class="carousel-slide">
+                    <img src="assets/img/slider1.jpg" alt="Premium dry fruits banner">
+                    <div class="hero-caption"><img src="assets/img/banner-caption1.png" alt=""></div>
+                </div>
+                <div class="carousel-slide">
+                    <img src="assets/img/slider2.jpg" alt="Fresh dates banner">
+                    <div class="hero-caption"><img src="assets/img/banner-caption2.png" alt=""></div>
+                </div>
+                <div class="carousel-slide">
+                    <img src="assets/img/slider3.jpg" alt="Seeds and nuts banner">
+                    <div class="hero-caption"><img src="assets/img/banner-caption3.png" alt=""></div>
+                </div>
+                <div class="carousel-slide">
+                    <img src="assets/img/slider4.jpg" alt="Nuts and berries banner">
+                    <div class="hero-caption"><img src="assets/img/banner-caption4.png" alt=""></div>
+                </div>
+                <div class="carousel-slide">
+                    <img src="assets/img/slider5.jpg" alt="Gift hampers banner">
+                    <div class="hero-caption"><img src="assets/img/banner-caption5.png" alt=""></div>
+                </div>
+            </div>
+            <button type="button" class="carousel-prev" aria-label="Previous slide"><i class="fa-solid fa-chevron-left"></i></button>
+            <button type="button" class="carousel-next" aria-label="Next slide"><i class="fa-solid fa-chevron-right"></i></button>
+            <div class="carousel-dots"></div>
+        </div>
+    </section>
+
+    <!-- Trust badges -->
+    <section class="container">
+        <div class="trust-badges">
+            <div class="trust-badge"><i class="fa-solid fa-truck-fast"></i><span><strong>Free Shipping</strong><span>On orders above ₹499</span></span></div>
+            <div class="trust-badge"><i class="fa-solid fa-leaf"></i><span><strong>100% Natural</strong><span>No preservatives added</span></span></div>
+            <div class="trust-badge"><i class="fa-solid fa-shield-halved"></i><span><strong>Quality Assured</strong><span>Hand-sorted &amp; lab tested</span></span></div>
+            <div class="trust-badge"><i class="fa-solid fa-rotate-left"></i><span><strong>Easy Returns</strong><span>7 day return policy</span></span></div>
+        </div>
+    </section>
+
+    <!-- Shop By Categories -->
+    <section class="container" data-tabs>
+        <div class="section-title"><h2>Shop By Categories</h2></div>
+        <nav class="category-tabs-nav">
+            <button type="button" data-tab="dry-fruits" class="active"><img src="assets/img/s1.svg" alt="">Dry Fruits</button>
+            <button type="button" data-tab="seeds"><img src="assets/img/s2.svg" alt="">Seeds</button>
+            <button type="button" data-tab="dates"><img src="assets/img/s3.svg" alt="">Dates</button>
+            <button type="button" data-tab="nuts-berries"><img src="assets/img/s4.svg" alt="">Nuts &amp; Berries</button>
+        </nav>
+
+        <div data-tab-panel="dry-fruits" class="active">
+            <p class="tab-intro">Explore our world of delectable dry fruits. Conveniently buy online and experience swift, secure delivery right to your doorstep — all handpicked for the best in quality.</p>
+            <div class="product-grid js-product-grid"></div>
+        </div>
+        <div data-tab-panel="seeds">
+            <p class="tab-intro">Nutrient-dense seeds to power up your smoothies, salads and everyday cooking.</p>
+            <div class="product-grid js-product-grid"></div>
+        </div>
+        <div data-tab-panel="dates">
+            <p class="tab-intro">Naturally sweet, farm-fresh dates sourced from Iran, Saudi Arabia and Madinah.</p>
+            <div class="product-grid js-product-grid"></div>
+        </div>
+        <div data-tab-panel="nuts-berries">
+            <p class="tab-intro">A colourful mix of roasted nuts and tangy dried berries for guilt-free snacking.</p>
+            <div class="product-grid js-product-grid"></div>
+        </div>
+
+        <div class="text-center mt-4 mb-5">
+            <a href="pages/shop.html" class="theme-btn">View All Products</a>
+        </div>
+    </section>
+
+    <!-- Featured strip -->
+    <section class="container">
+        <div class="section-title"><h2>Featured Products</h2></div>
+        <div class="featured-strip js-featured-strip"></div>
+    </section>
+
+    <!-- New Arrivals -->
+    <section class="container mt-5">
+        <div class="section-title"><h2>New Arrivals</h2></div>
+        <div class="carousel-shell mt-4" data-carousel data-autoplay="true" data-interval="7000">
+            <div class="carousel-slides js-new-arrivals-track"></div>
+            <div class="carousel-controls">
+                <button type="button" class="carousel-prev" aria-label="Previous"><i class="fa-solid fa-chevron-left"></i></button>
+                <div class="carousel-dots"></div>
+                <button type="button" class="carousel-next" aria-label="Next"><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits banner -->
+    <section class="bg-scroll">
+        <div class="container">
+            <div class="benefits-details">
+                <h3>Benefits Of Dry Fruits &amp; Nuts</h3>
+                <p>Eating dry fruits and nuts everyday will keep diseases and stress away.</p>
+                <a href="pages/about.html" class="theme-btn btn-bg">Know More <i class="fa-solid fa-arrow-right-long px-2"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews -->
+    <section class="review-section container">
+        <div class="section-title"><h2>Our Customer Feedback</h2></div>
+        <div class="review-grid mt-4">
+            <div class="customer-bio">
+                <div class="bio-inner">
+                    <div class="customer-avtar"><img src="assets/img/user1.webp" alt="Rahul"></div>
+                    <div class="customer-rating">
+                        <span class="customer-name">Rahul Mehta</span>
+                        <ul class="rating-ul d-flex"><li><i class="fa-solid fa-star"></i></li><li><i class="fa-solid fa-star"></i></li><li><i class="fa-solid fa-star"></i></li><li><i class="fa-solid fa-star"></i></li><li><i class="fa-solid fa-star"></i></li></ul>
+                    </div>
+                </div>
+                <p class="customer-thought">The cashews are incredibly fresh and the packaging keeps everything crunchy. My family's new favourite snack stop!</p>
+            </div>
+            <div class="customer-bio">
+                <div class="bio-inner">
+                    <div class="customer-avtar"><img src="assets/img/user2.jpg" alt="Anjali"></div>
+                    <div class="customer-rating">
+                        <span class="customer-name">Anjali Sharma</span>
+                        <ul class="rating-ul d-flex"><li><i class="fa-solid fa-star"></i></li><li><i class="fa-solid fa-star"></i></li><li><i class="fa-solid fa-star"></i></li><li><i class="fa-solid fa-star"></i></li><li><i class="fa-regular fa-star"></i></li></ul>
+                    </div>
+                </div>
+                <p class="customer-thought">Ordered the Medjool dates for a gift hamper — beautifully packed and the quality was even better than the local store.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Follow us -->
+    <section class="follow-us-top container">
+        <div class="section-title"><h2>Follow Us On</h2></div>
+        <div class="follow-onSocial mt-4">
+            <ul>
+                <li title="Facebook"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li title="Twitter"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li title="Instagram"><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li title="Pinterest"><a href="#"><i class="fa-brands fa-pinterest-p"></i></a></li>
+                <li title="LinkedIn"><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+            </ul>
+        </div>
+    </section>
+
+    <footer id="site-footer"></footer>
+
+    <script src="assets/js/data/products.js"></script>
+    <script src="assets/js/utils.js"></script>
+    <script src="assets/js/cart.js"></script>
+    <script src="assets/js/auth.js"></script>
+    <script src="assets/js/search.js"></script>
+    <script src="assets/js/carousel.js"></script>
+    <script src="assets/js/product-card.js"></script>
+    <script src="assets/js/components.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/pages/home.js"></script>
+</body>
+
+</html>
